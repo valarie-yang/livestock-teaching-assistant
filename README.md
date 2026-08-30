@@ -8,6 +8,17 @@ A public-safe portfolio case for an AI-assisted livestock and veterinary teachin
 
 ![Teaching workflow](assets/portfolio-signal.svg)
 
+## Case evidence: role / inputs / outputs / result / boundary
+
+| | Portfolio proof |
+|---|---|
+| **My role** | Owned the learning workflow, reasoning rubric, low-confidence review queue, content governance, remediation loop and teacher release gate. |
+| **Inputs** | Synthetic case observation, learner hypothesis, learning objective and teacher-configured rubric. |
+| **AI + system work** | AI organizes evidence, drafts feedback and suggests practice; deterministic scoring and teacher review remain the control points. |
+| **Outputs** | Evidence checklist, structured feedback, confidence/review state, remediation exercise and teacher progress view. |
+| **Result** | A public-safe product case and synthetic demo package that shows how a domain agent can be useful without claiming clinical validity or school outcomes. |
+| **Boundary** | Educational assistance only; no autonomous diagnosis, treatment recommendation, real student record or private source implementation is exposed. |
+
 ## Product problem
 
 Livestock and veterinary learners need to connect observation, reasoning, evidence, and prevention planning. Teachers need a repeatable way to review answers, identify low-confidence or weak reasoning, and assign targeted remediation without treating an AI output as professional or academic authority.
