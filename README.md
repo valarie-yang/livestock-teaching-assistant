@@ -6,6 +6,8 @@ A public-safe portfolio case for an AI-assisted livestock and veterinary teachin
 
 **Role lens:** AI Product Management · AI Solutions · Learning Workflows · Domain Data Governance
 
+![Teaching workflow](assets/portfolio-signal.svg)
+
 ## Product problem
 
 Livestock and veterinary learners need to connect observation, reasoning, evidence, and prevention planning. Teachers need a repeatable way to review answers, identify low-confidence or weak reasoning, and assign targeted remediation without treating an AI output as professional or academic authority.
