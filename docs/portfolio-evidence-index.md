@@ -2,23 +2,24 @@
 
 ## Recruiter path
 
-1. Start with the [product brief](product-brief.md).
-2. Review the [workflow and review gates](workflow-and-review-gates.md).
-3. Inspect the [synthetic case set](synthetic-case-set.md).
-4. Check the [public boundary](public-data-boundary.md).
-5. Use the [demo script](demo-script.md) for a short walkthrough.
+1. [Open the detailed evidence preview](../assets/evidence-overview.svg).
+2. Read the [product brief](product-brief.md).
+3. Review [workflow and review gates](workflow-and-review-gates.md).
+4. Inspect the [synthetic case set](synthetic-case-set.md) and [public data boundary](public-data-boundary.md).
+5. Use the [demo script](demo-script.md) for a safe walkthrough.
 
-## Evidence status
+## Runtime and test status
 
-| Evidence | Status |
+| Check | Status |
 |---|---|
-| Product problem and user workflow | Public, authored for portfolio review |
-| State model and teacher gate | Public, authored for portfolio review |
-| Synthetic cases | Public, self-authored fictional fixtures |
+| Public app runtime | Not mirrored; docs-first case |
+| Synthetic case fixtures | Public, self-authored fictional content |
+| Application test command | None claimed |
 | Private source implementation | Not mirrored |
-| Textbook/exam/real records | Excluded |
-| Clinical validity and school outcomes | Not claimed |
+| Clinical/school outcomes | Not claimed |
 
-## Hiring signal
+## Evidence level
 
-This case supports AI Solutions, Applied AI Product Manager, and domain-learning product roles. Its strongest signal is the ability to convert expert review, uncertainty, remediation, and platform constraints into a governable product workflow.
+`public-safe reconstruction` · `synthetic educational cases` · `prototype/workflow design`.
+
+No textbook images, recovered exam questions, real student records, platform credentials, internal URLs, autonomous diagnosis or treatment recommendation is included.
