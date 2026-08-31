@@ -8,6 +8,22 @@ A public-safe portfolio case for an AI-assisted livestock and veterinary teachin
 
 ![Teaching workflow](assets/portfolio-signal.svg)
 
+![Detailed evidence preview](assets/evidence-overview.svg)
+
+
+## Quick start and verification
+
+1. Open the [detailed evidence preview](assets/evidence-overview.svg) to see learner reasoning, structured feedback, teacher review and remediation.
+2. Follow the [portfolio evidence index](docs/portfolio-evidence-index.md).
+3. Read the [product brief](docs/product-brief.md), [workflow and review gates](docs/workflow-and-review-gates.md), [synthetic case set](docs/synthetic-case-set.md), and [public boundary](docs/public-data-boundary.md).
+
+**Public runtime:** Documentation-first product case and synthetic demonstration package. The private source project is not mirrored, so no public install/start command is claimed.
+
+**Test command:** `N/A — no public application test suite is claimed.` The valid verification path is the synthetic case, workflow gate and boundary review.
+
+**Evidence level:** `public-safe reconstruction` · `synthetic educational cases` · `prototype/workflow design`; not clinical validity, school outcomes or veterinary advice.
+
+This case is educational assistance only; the AI does not diagnose animals, prescribe treatment or replace a teacher/veterinarian.
 ## Case evidence: role / inputs / outputs / result / boundary
 
 | | Portfolio proof |
