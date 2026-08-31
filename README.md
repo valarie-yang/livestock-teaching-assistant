@@ -60,3 +60,10 @@ The AI may help organize feedback, generate a draft explanation, or suggest a fo
 - [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) — content rights and publication boundary
 
 > This repository is a portfolio reconstruction. It must not be presented as the private platform, an official school deployment, a clinical decision system, or a copy of any employer or institution's content.
+
+
+## Public-safe product decisions
+
+The reviewed private baseline was distilled into a separate public-safe product artifact. It contains product decisions and review boundaries only; it does not mirror private implementation, real records, credentials, internal URLs, or source content.
+
+- [Public-safe product decisions](docs/public-safe-product-decisions.md)
