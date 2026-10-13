@@ -2,24 +2,24 @@
 
 ## Recruiter path
 
-1. [Open the detailed evidence preview](../assets/evidence-overview.svg).
-2. Read the [product brief](product-brief.md).
-3. Review [workflow and review gates](workflow-and-review-gates.md).
-4. Inspect the [synthetic case set](synthetic-case-set.md) and [public data boundary](public-data-boundary.md).
-5. Use the [demo script](demo-script.md) for a safe walkthrough.
+This repository presents two related but distinct artifacts. Read the root [README](../README.md) first for their exact boundary.
 
-## Runtime and test status
+1. The teacher-side image-to-question authoring prototype: product workflow, local storage, and API boundary are summarized in the README and portfolio flow diagram.
+2. The separate synthetic learner-feedback case: review the [product brief](product-brief.md), [workflow and review gates](workflow-and-review-gates.md), and [synthetic case set](synthetic-case-set.md).
+3. Review the [public boundary](public-data-boundary.md) before using any example.
 
-| Check | Status |
+## Evidence status
+
+| Evidence | Status |
 |---|---|
-| Public app runtime | Not mirrored; docs-first case |
-| Synthetic case fixtures | Public, self-authored fictional content |
-| Application test command | None claimed |
+| Teacher image-to-question flow | Local teacher demo; manually configured API; local-browser question bank |
+| Student practice page | Separate surface; not connected to the local teacher question bank |
+| Synthetic learner-feedback workflow | Public, authored separately for portfolio review |
+| Synthetic cases | Self-authored fictional fixtures |
 | Private source implementation | Not mirrored |
-| Clinical/school outcomes | Not claimed |
+| Textbook/exam/real records | Excluded |
+| Clinical validity, classroom adoption, and learning outcomes | Not claimed |
 
-## Evidence level
+## Hiring signal
 
-`public-safe reconstruction` · `synthetic educational cases` · `prototype/workflow design`.
-
-No textbook images, recovered exam questions, real student records, platform credentials, internal URLs, autonomous diagnosis or treatment recommendation is included.
+This portfolio supports Applied AI Product Manager and AI Solutions roles through workflow design, multimodal content drafting, human review, and explicit deployment boundaries. The image-to-question prototype has not validated teacher time savings or classroom outcomes.
