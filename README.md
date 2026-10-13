@@ -27,6 +27,10 @@ The product idea is to make an image-to-question workflow reviewable—not to pu
 - Question quality, teacher time savings, classroom adoption, and learning outcomes have not been validated.
 - This is for teaching practice only, not animal diagnosis or treatment guidance.
 
+## Early API cost observation
+
+Author-reported small-scale test mean: approximately **CNY 0.1 or less per question** for image recognition and question generation in the tested flow. The sample size and call scope are not standardized; actual costs vary with the model, image, prompt, and retries. This is not a benchmark or guarantee and excludes teacher review time.
+
 ## Product decisions and next validation
 
 - Keep the image, optional learning focus, generated draft, teacher edits, and approval as distinct steps.
