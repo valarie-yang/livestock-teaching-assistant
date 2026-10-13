@@ -1,85 +1,49 @@
-# AI-Assisted Livestock Teaching Assistant
+# Muzhi Livestock Teaching Assistant
 
-A public-safe portfolio case for an AI-assisted livestock and veterinary teaching workflow. It shows how domain learning content, structured assessment, teacher review, remediation, and deployment constraints can be designed as one product system.
+An AI-assisted, teacher-side prototype for turning a teaching-case image into an editable question draft.
 
-**Status:** Public-safe product case and synthetic demonstration package. The private source project is not mirrored here. This repository contains no textbook images, recovered exam questions, real student records, platform credentials, internal URLs, or production deployment claims.
+![Image-to-question authoring flow](https://raw.githubusercontent.com/valarie-yang/valarie-website/main/assets/muzhi-image-to-question-flow.svg)
 
-**Role lens:** AI Product Management · AI Solutions · Learning Workflows · Domain Data Governance
+**Current artifact:** The teacher authoring workflow is a local prototype. A student practice page is deployed separately, but the teacher's local question bank is not connected to it. This repository is a public-safe portfolio case; it does not contain the private product source.
 
-![Teaching workflow](assets/portfolio-signal.svg)
+## Product hypothesis
 
-![Detailed evidence preview](assets/evidence-overview.svg)
+Teachers who already have teaching-case images may need to manually turn each image into a question, answer, and explanation before adding it to a practice bank. This is a product hypothesis, not a finding from user interviews or a measured classroom study.
 
+## What the prototype does
 
-## Quick start and verification
+1. A teacher selects an original or otherwise authorized teaching image.
+2. The teacher may add an optional prompt to focus the learning objective.
+3. After manually configuring a DeepSeek API, the prototype sends the selected image and prompt/context to that API to draft a candidate question, answer, and explanation. Use only original or authorized, non-sensitive materials, and review the provider's data terms before use.
+4. The teacher edits and verifies the content, then saves it to the current browser's local question bank.
 
-1. Open the [detailed evidence preview](assets/evidence-overview.svg) to see learner reasoning, structured feedback, teacher review and remediation.
-2. Follow the [portfolio evidence index](docs/portfolio-evidence-index.md).
-3. Read the [product brief](docs/product-brief.md), [workflow and review gates](docs/workflow-and-review-gates.md), [synthetic case set](docs/synthetic-case-set.md), and [public boundary](docs/public-data-boundary.md).
+The product idea is to make an image-to-question workflow reviewable—not to publish generated content without a teacher.
 
-**Public runtime:** Documentation-first product case and synthetic demonstration package. The private source project is not mirrored, so no public install/start command is claimed.
+## What is not connected or validated
 
-**Test command:** `N/A — no public application test suite is claimed.` The valid verification path is the synthetic case, workflow gate and boundary review.
+- Image authoring requires a manually configured API and network access; the selected image and prompt/context leave the browser and are sent to the configured DeepSeek API.
+- Reviewed questions are saved only in the current browser; they are not published to the online student practice page.
+- Server-side teacher authoring and cross-device publishing are not deployed.
+- Question quality, teacher time savings, classroom adoption, and learning outcomes have not been validated.
+- This is for teaching practice only, not animal diagnosis or treatment guidance.
 
-**Evidence level:** `public-safe reconstruction` · `synthetic educational cases` · `prototype/workflow design`; not clinical validity, school outcomes or veterinary advice.
+## Product decisions and next validation
 
-This case is educational assistance only; the AI does not diagnose animals, prescribe treatment or replace a teacher/veterinarian.
-## Case evidence: role / inputs / outputs / result / boundary
+- Keep the image, optional learning focus, generated draft, teacher edits, and approval as distinct steps.
+- Treat generated content as a candidate; teachers verify the question, answer, and explanation against authorized source material.
+- Use original or authorized images in public materials; do not expose textbook/exam content, student records, API keys, logs, or private deployment details.
+- Next, measure teacher review time, edit distance, and the share of drafts accepted after review. These are proposed measures, not current results.
 
-| | Portfolio proof |
-|---|---|
-| **My role** | Owned the learning workflow, reasoning rubric, low-confidence review queue, content governance, remediation loop and teacher release gate. |
-| **Inputs** | Synthetic case observation, learner hypothesis, learning objective and teacher-configured rubric. |
-| **AI + system work** | AI organizes evidence, drafts feedback and suggests practice; deterministic scoring and teacher review remain the control points. |
-| **Outputs** | Evidence checklist, structured feedback, confidence/review state, remediation exercise and teacher progress view. |
-| **Result** | A public-safe product case and synthetic demo package that shows how a domain agent can be useful without claiming clinical validity or school outcomes. |
-| **Boundary** | Educational assistance only; no autonomous diagnosis, treatment recommendation, real student record or private source implementation is exposed. |
+## About the other learning-workflow materials
 
-## Product problem
+Some supporting documents in `docs/` describe a separate, synthetic learner-feedback case (learner reasoning, rubric feedback, teacher review, and remediation). That case is not the implementation of the image-to-question authoring demo described above. The documents remain useful as independent product-design work; do not conflate the two artifacts.
 
-Livestock and veterinary learners need to connect observation, reasoning, evidence, and prevention planning. Teachers need a repeatable way to review answers, identify low-confidence or weak reasoning, and assign targeted remediation without treating an AI output as professional or academic authority.
+## Repository guide
 
-## Learning workflow
+- [Product brief](docs/product-brief.md) — the separate synthetic learning-workflow case
+- [Workflow and review gates](docs/workflow-and-review-gates.md) — learner/teacher review-state design
+- [Synthetic case set](docs/synthetic-case-set.md) — fictional examples only
+- [Public data boundary](docs/public-data-boundary.md) — privacy, copyright, and safety limits
+- [Portfolio evidence index](docs/portfolio-evidence-index.md) — evidence and recruiter reading path
 
-    Case observation
-        ↓
-    Learner hypothesis + reasoning
-        ↓
-    Structured rubric feedback
-        ↓
-    Teacher review and release gate
-        ↓
-    Remediation / spaced practice
-        ↓
-    Teacher progress report
-
-## What this public package demonstrates
-
-- domain-specific learning workflow design;
-- structured reasoning and rubric criteria;
-- low-confidence and disagreement review paths;
-- teacher-controlled feedback and publishing;
-- synthetic case authoring and content governance;
-- platform-constrained rollout and human fallback thinking;
-- a clear boundary between educational assistance and veterinary advice.
-
-The AI may help organize feedback, generate a draft explanation, or suggest a follow-up exercise. It cannot independently diagnose an animal, prescribe treatment, publish course content, or replace a teacher, veterinarian, or institutional review process.
-
-## Repository map
-
-- [docs/product-brief.md](docs/product-brief.md) — users, problem, scope, and role boundary
-- [docs/workflow-and-review-gates.md](docs/workflow-and-review-gates.md) — learner, teacher, and release states
-- [docs/synthetic-case-set.md](docs/synthetic-case-set.md) — self-authored fictional case cards
-- [docs/public-data-boundary.md](docs/public-data-boundary.md) — privacy, copyright, and safety boundary
-- [docs/portfolio-evidence-index.md](docs/portfolio-evidence-index.md) — recruiter reading path and evidence status
-- [docs/demo-script.md](docs/demo-script.md) — safe walkthrough using synthetic content
-- [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) — content rights and publication boundary
-
-> This repository is a portfolio reconstruction. It must not be presented as the private platform, an official school deployment, a clinical decision system, or a copy of any employer or institution's content.
-
-
-## Public-safe product decisions
-
-The reviewed private baseline was distilled into a separate public-safe product artifact. It contains product decisions and review boundaries only; it does not mirror private implementation, real records, credentials, internal URLs, or source content.
-
-- [Public-safe product decisions](docs/public-safe-product-decisions.md)
+This public repository is a curated portfolio case, not a mirror of the private application. It does not claim clinical validity, school deployment, or production-scale results.
