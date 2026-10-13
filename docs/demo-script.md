@@ -1,4 +1,6 @@
-# Public-safe demo script
+# Separate synthetic learner-feedback case: demo script
+
+This script applies only to the synthetic learner-feedback workflow documented in this folder. It is not a walkthrough of the teacher-side image-to-question authoring prototype described in the repository root README.
 
 1. Open a synthetic case and show the observation fields.
 2. Submit a response that contains a clear observation and one missing piece of evidence.
